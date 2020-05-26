@@ -112,6 +112,25 @@ h2:after {
 }
 
 /*******************************************/
+/*links*/
+/*******************************************/
+a:link,
+a:visited {
+    color          : #ff7f50;
+    text-decoration: none;
+    padding-bottom : 1px;
+    border-bottom  : 1px solid #ff7f50;
+    transition     : border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color        : #555;
+    border-bottom: 1px solid transparent;
+
+}
+
+/*******************************************/
 /*buttons*/
 /*******************************************/
 .btn:link,
@@ -159,10 +178,11 @@ h2:after {
 /*HEADER*/
 /*******************************************/
 header {
-    background-image   : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-    background-size    : cover;
-    background-position: center;
-    height             : 100vh;
+    background-image     : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size      : cover;
+    background-position  : center;
+    height               : 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -299,8 +319,84 @@ header {
     margin-right : 20px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
 .btn-app img {
     height      : 50px;
     width       : auto;
     margin-right: 10px;
+}
+
+/*******************************************/
+/*Cities*/
+/*******************************************/
+.box img {
+    width        : 100%;
+    height       : auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+.city-feature ion-icon {
+    display       : inline-block;
+    width         : 30px;
+    text-align    : center;
+    color         : #ff662e;
+    font-size     : 120%;
+    margin-right  : 10px;
+    /*secret to align icon*/
+    line-height   : 120%;
+    vertical-align: middle;
+    margin-top    : -4px;
+}
+
+/*******************************************/
+/*testimonial*/
+/*******************************************/
+.section-testimonial {
+    background-image     : linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-size      : cover;
+    background-position  : center;
+    height               : 90vh;
+    color                : #FFF;
+    background-attachment: fixed;
+}
+blockquote:before {
+    content:"\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top:0px;
+    left:-5px;
+
+}
+blockquote {
+    padding    : 2%;
+    font-style : italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite {
+    font-size : 90%;
+    margin-top: 25px;
+    display   : block;
+}
+
+cite img {
+    height        : 45px;
+    border-radius : 50%;
+    margin-right  : 10px;
+    vertical-align: middle;
+}
+
+.col1 {
+    margin-left: 0;
 }
