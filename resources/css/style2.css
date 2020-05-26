@@ -367,21 +367,23 @@ header {
     color                : #FFF;
     background-attachment: fixed;
 }
+
 blockquote:before {
-    content:"\201C";
+    content  : "\201C";
     font-size: 400%;
-    display: block;
-    position: absolute;
-    top:0px;
-    left:-5px;
+    display  : block;
+    position : absolute;
+    top      : 0px;
+    left     : -5px;
 
 }
+
 blockquote {
     padding    : 2%;
     font-style : italic;
     line-height: 145%;
-    position: relative;
-    margin-top: 40px;
+    position   : relative;
+    margin-top : 40px;
 }
 
 cite {
@@ -400,3 +402,71 @@ cite img {
 .col1 {
     margin-left: 0;
 }
+
+/*******************************************/
+/*section plan*/
+/*******************************************/
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius   : 5px;
+    width           : 90%;
+    margin-left     : 5%;
+    box-shadow: 10px 20px 10px rgb(236, 100, 100);
+}
+
+.plan-box div {
+    padding      : 15px;
+    border-bottom: 1px solid rgb(230, 227, 227);
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+}
+
+.plan-price {
+    font-size    : 300%;
+    margin-bottom: 10px;
+    color        : #ff7f50;
+}
+
+.plan-price span {
+    font-size  : 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+.plan-box ul li ion-icon {
+    display       : inline-block;
+    width         : 30px;
+    text-align    : center;
+    color         : #ff662e;
+    font-size     : 120%;
+    margin-right  : 10px;
+    /*secret to align icon*/
+    line-height   : 120%;
+    vertical-align: middle;
+    margin-top    : -4px;
+}
+
