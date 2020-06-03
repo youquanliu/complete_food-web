@@ -199,7 +199,7 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.logo{
+.logo {
     height    : 100px;
     width     : auto;
     float     : left;
@@ -208,10 +208,10 @@ header {
 
 .logo-black {
     display: none;
-    height    : 50px;
-    width     : auto;
-    float     : left;
-    margin: 5px 0;
+    height : 50px;
+    width  : auto;
+    float  : left;
+    margin : 5px 0;
 }
 
 /* Main Nav */
@@ -250,9 +250,11 @@ header {
     left            : 0;
     width           : 100%;
     background-color: rgb(255, 239, 239);
-    box-shadow: 0 2px 20px rgb(194, 188, 188)
+    box-shadow      : 0 2px 20px rgb(194, 188, 188);
+    z-index         : 9999;
 }
-.main-nav {
+
+.sticky .main-nav {
     margin-top: 18px;
 }
 
@@ -261,14 +263,16 @@ header {
     padding: 17px 0;
     color  : #555;
 }
-.sticky .logo{
+
+.sticky .logo {
     display: none;
 }
-.sticky .logo-black{
-    display: block;
-    height: 50px;
-    width: auto;
-    float: left;
+
+.sticky .logo-black {
+    display   : block;
+    height    : 50px;
+    width     : auto;
+    float     : left;
     margin-top: 5px;
 
 }
