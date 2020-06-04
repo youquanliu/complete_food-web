@@ -243,6 +243,19 @@ header {
     padding-bottom: 5px;
 }
 
+/*Mnobile nav*/
+.mobile-nav-icon {
+    float     : right;
+    margin-top: 30px;
+    cursor    : pointer;
+    display   : none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color    : #fff;
+}
+
 /* Sticky nav */
 .sticky {
     position        : fixed;
@@ -274,7 +287,6 @@ header {
     width     : auto;
     float     : left;
     margin-top: 5px;
-
 }
 
 /*******************************************/
@@ -645,4 +657,22 @@ footer p {
     color     : #888;
     text-align: center;
     margin-top: 30px;
+}
+
+/*******************************************/
+/*Animation*/
+/*******************************************/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4 {
+    opacity           : 0;
+    animation-duration: 1s;
+}
+
+.animate__fadeIn,
+.animate__bounceInUp,
+.animate__fadeInTopRight,
+.animate__zoomInLeft {
+    opacity: 1;
 }

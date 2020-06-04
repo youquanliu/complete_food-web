@@ -10,7 +10,7 @@ $(document).ready(function () {
     }, {
         offset: '60px'
     })
-    
+
     /* Scroll on buttons*/
     $('.js--scroll-to-plan').click(function () {
         $('html, body').animate({ scrollTop: $('.js--section-plans').offset().top }, 1000);
@@ -55,4 +55,41 @@ $(document).ready(function () {
                 }
             }
         });
+    /* Navigation on row*/
+    $('.js--wp-1').waypoint(function () {
+        $('.js--wp-1').addClass('animate__animated animate__fadeIn');
+    }, {
+        offset: '50%'
+    });
+    $('.js--wp-2').waypoint(function () {
+        $('.js--wp-2').addClass('animate__animated animate__bounceInUp');
+    }, {
+        offset: '50%'
+    });
+    $('.js--wp-3').waypoint(function () {
+        $('.js--wp-3').addClass('animate__animated animate__fadeInTopRight');
+    }, {
+        offset: '50%'
+    });
+    $('.js--wp-4').waypoint(function () {
+        $('.js--wp-4').addClass('animate__animated animate__zoomInLeft');
+    }, {
+        offset: '50%'
+    });
+
+    /* Mobile nav */
+    $('.js--nav-icon').click(function(){
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon ion-icon');
+
+        nav.slideToggle(200);
+
+        var compareResult = icon.attr('name') === 'menu-outline';
+        if(compareResult){
+            icon.attr('name', 'close');
+        }else{
+            icon.attr('name', 'menu-outline');
+        }
+
+    });
 })
