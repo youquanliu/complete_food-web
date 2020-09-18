@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    $("h2").click(function () {
+        alert("The paragraph was clicked.");
+    });
+    
     /* For Sticky navigation*/
     $('.js--section-features').waypoint(function (direction) {
         if (direction == "down") {

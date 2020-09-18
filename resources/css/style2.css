@@ -146,6 +146,11 @@ input[type=submit] {
     transition     : background-color 0.2s, border 0.2s, color 0.2s;
 }
 
+.btn:hover,
+.btn:active {
+    background-color: #ff662e;
+}
+
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
@@ -159,11 +164,6 @@ input[type=submit] {
 .btn-ghost:visited {
     border: 1px solid #ff7f50;
     color : #ff7f50;
-}
-
-.btn:hover,
-.btn:active {
-    background-color: #ff662e;
 }
 
 .btn-full:hover,
@@ -189,6 +189,7 @@ header {
     background-position  : center;
     height               : 100vh;
     background-attachment: fixed;
+    
 }
 
 .hero-text-box {
@@ -234,7 +235,6 @@ header {
     border-bottom  : 2px solid transparent;
     font-size      : 90%;
     transition     : border-bottom 0.2s;
-
 }
 
 .main-nav li a:hover,
@@ -322,17 +322,17 @@ header {
 }
 
 .meal-photo img {
-    opacity   : 0.7;
     width     : 100%;
     height    : auto;
+    opacity   : 0.7;
     transform : scale(1.15);
     /* 115% bigger */
     transition: transform 0.5s, opacity 0.5s;
 }
 
 .meal-photo img:hover {
-    transform: scale(1.03);
     opacity  : 1;
+    transform: scale(1.03);
 }
 
 /*******************************************/

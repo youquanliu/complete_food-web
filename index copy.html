@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+  <title>Frank Liu</title>
+  <style>
+    body {
+      text-align: center;
+      background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.imgur.com/RnfO4sV.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: helvetica;
+      max-width:1140px;
+      margin: 0 auto;
+    }
+    div{
+      max-width: 1140px;
+      margin-left: 10%;
+      margin-right:10%;
+      }
+    img{
+      display:inline-block;
+      float: left;
+      max-width: 40%;
+      margin: 5% 4% auto 4%;
+      border: 3px solid white;
+      border-radius:100px;
+    }
+    p {
+      font-size: 30px;
+      display:block;
+      margin-top:5%;
+    }
+    p:after{
+      content:"";
+      display:block;
+      height:5px;
+      border-radius:15px;
+      background-color:#ff7f50;
+      width: 300px;
+      margin:15px auto 0 auto;
+    }
+    form{
+      display:inline-block;
+      max-width: 40%;
+      margin: 5% 4% auto 4%;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+
+    }
+    input[type="submit"] {
+      background: #ff662e;
+      color: white;
+    }
+    label{
+      float:left;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+    input[type=text],
+    input[type=email],
+    select{
+      width:100%;
+      padding: 7px;
+      border-radius:3px;
+      border:1px solid #ccc;
+      font-size: 18px;
+    }
+    input[type=submit] {
+      width:100%;
+      display : inline-block;
+      padding: 10px 30px;
+      font-weight : 400;
+      text-decoration: none;
+      border-radius: 200px;
+      transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+    input[type=submit] {
+      background-color: #ff7f50;
+      border: 1px solid #ff7f50;
+      color : #FFF;
+      margin-right: 15px;
+    }
+    input[type=submit]:hover,
+    input[type=submit]:active {
+      background-color: #ff662e;
+      border: 1px solid #ff662e;
+    }
+    select{
+    margin-bottom:30px;
+    }
+    *:focus {
+    outline: none;
+    }
+    
+    @media only screen and (max-width: 480px) {
+    body{max-width:480px;
+    padding: 0 10px;}
+    p{font-size:20px;}
+    p:after{
+    width:50%;
+    }
+    img{
+    float:none;
+    margin: 0 auto;
+    display:block;
+    }
+    form{
+      float:none;
+      max-width:400px;
+      margin: 0 auto;
+      font-size:70%;
+    }
+    input[type=text],
+    input[type=email],
+    select{
+      font-size:80%;  
+    }
+    
+}
+  </style>
+</head>
+<body>
+  
+  <p>Hi! I'm Frank, a great Front-end developer in future</p>
+  <div>
+  <img src="https://i.imgur.com/oSiUybR.jpg"title="source: imgur.com" /></a>
+
+  <form action="#" method="post" class="contact-form">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Your name" required>
+    <label for="email">Email</label>
+    <input type="email" placeholder="Your email">
+    <label for="find-me">How did you find me?</label>
+    <select name="find-me" id="find-us">
+      <option value="friends" selected>Friends</option>
+      <option value="search">Search Engine</option>
+      <option value="ad">LinkedIn</option>
+      <option value="other">Other</option>
+    </select>
+    <input type="submit" value="Nice to meet you">
+  </form>
+  </div>
+</body>
