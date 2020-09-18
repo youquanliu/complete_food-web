@@ -2,7 +2,7 @@
 
 Responsive web page design
 
-![Screen Shot](./resources/img/complete-food?raw=true "page of game")
+![Screen Shot](./resources/img/complete-food.png?raw=true "page of game")
 
 
 ## Techologies Used
