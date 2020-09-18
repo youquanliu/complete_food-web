@@ -1,2 +1,18 @@
 # complete_food-web
-real world responsive website with html&amp;css
+
+Responsive web page design
+
+![Screen Shot](./resources/img/complete-food?raw=true "page of game")
+
+
+## Techologies Used
+
+* HTML
+* CSS
+* JAVASCRIPT
+
+
+## Getting Started
+
+### Click to [view the page](https://youquanliu.github.io/complete_food-web/)
+
